@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> My Blog </title>
+   <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      body {
+         background: #f4f4f4;
+      }
+
+      /* Navbar */
+      nav {
+         background: #222;
+         color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px 50px;
+      }
+      .logo {
+         font-size: 28px;
+         font-weight: bold;
+      }   
+      .menu {
+         display: flex;
+         gap: 20px;
+      }
+      .menu a {
+         color: white;
+         text-decoration: none;
+      }
+      .menu a:hover {
+         color: yellow;
+      }
+  
+     /* Hero */
+     .hero {
+        background: white;
+        text-align: center;
+        padding: 80px 20px;
+     }
+     .hero h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+     }
+     .hero p {
+       color: gray;
+       font-size: 20px;
+     }
+    
+     /* Blog Cards */
+     .blogs {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        padding: 50px;
+     }
+     .card {
+         width: 600px;
+         background: black;
+         border-radius: 15px;
+         overflow: hidden;
+         box-shadow: 0 0 10px rgba(0,0,0,0.2);
+         transition: 0.5s;
+     }
+     .card:hover {
+        transform: translateY(-10px);
+     }
+     .card img {
+         width: 100%;
+         background: white;
+     }
+     .card-content {
+         padding: 20px;
+     }
+     .card-content h2 {
+         color: white;
+         margin-bottom: 10px;
+     }
+     .card-content p {
+         color: white;
+     }
+     .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+     }
+     .btn:hover {
+         background: red;
+     }
+   
+      /* Categories */
+      .categories {
+          text-align: center;
+          padding: 50px;
+      }
+      .categories h2 {
+          margin-bottom: 20px;
+      }
+      .category-box {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+      }
+      .category {
+          background: white;
+          padding: 20px;
+          width: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+ 
+      /* Footer */
+      footer {
+         background: #222;
+         color: white;
+         text-align: center;
+         padding: 20px;
+      }
+
+      /* Responsive */
+      @media(max-width:768px){
+         nav {
+             flex-direction:column;
+             gap:15px;
+         }
+         .hero h1{
+             font-size:35px;
+         }
+      }
+   </style>
+</head>
+<body>
+  <nav>
+       <div class="logo">
+          Vina Blog
+       </div>
+       
+       <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Blogs</a>
+          <a href="#">Categories</a>
+          <a href="#">Contact</a>
+       </div>
+  </nav>
+ 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1> Welcome To My Blog </h1>
+    <p> Read Latest Articles & Tutorials </p>
+  <section>
+
+  <!-- Blog Cards -->
+  <section class="blogs">
+
+    <div class="card">
+      <img src="images/HTML.png">
+      <div class="card-content">
+         <h2> HTML Tutorial </h2>
+         <p>Learn HTML from beginner to advanced.</p>
+         <a href="#" class="btn">Read More</a>  
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/CSS.png">
+      <div class="card-content">
+         <h2> CSS Tutorial </h2>
+         <p>Learn modern CSS design techniques.</p>
+         <a href="#" class="btn">Read More</a>  
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/responsive1.png">
+      <div class="card-content">
+         <h2> Responsive Design </h2>
+         <p>Make websites mobile friendly.</p>
+         <a href="#" class="btn">Read More</a>  
+      </div>
+    </div>  
+
+    </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+     <h2>Categories</h2>
+     <div class="category-box">
+        <div class="category">HTML</div>
+        <div class="category">CSS</div>
+        <div class="category">JavaScript</div>
+        <div class="category">Web Design</div>
+        <div class="category">PHP</div>
+        <div class="category">Laravel</div>
+        <div class="category">MySQL</div>
+     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Blog Website</p>
+  </footer> 
+</body>
+</html>

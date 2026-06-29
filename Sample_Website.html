@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> CodeWithVeena </title>
+   <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      body {
+         background-color: #f1f1f1;
+      }
+
+      /* Navbar */
+      nav {
+         background-color: #222;
+         color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px 50px;
+      }    
+      .logo {
+         font-size: 28px;
+         font-weight: bold;
+      }
+      .menu {
+         display: flex;
+         gap: 20px;
+      }
+      .menu a {
+         color: white;
+         text-decoration: none;
+         transition: 0.5s;
+      }
+      .menu a:hover {
+         color: yellow;
+      }
+
+      /* Hero Section */
+      .hero {
+         height: 400px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+      .hero h1 {
+         font-size: 50px;
+         color: #333;
+      }
+      .hero p {
+         font-size: 22px;
+         margin-top: 10px;
+         color: gray;
+      }
+      .hero button {
+         margin-top: 20px;
+         padding: 12px 25px;
+         border: none;
+         background-color: blue;
+         color: white;
+         border-radius: 10px;
+         font-size: 18px;
+         transition: 0.5s;
+      }
+     .hero button:hover {
+         background-color: red;
+         transform: scale(1.1);
+     }
+
+     /* Cards */
+     .cards {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         flex-wrap: wrap;
+         padding: 50px;
+     }
+     .card {
+         width: 250px;
+         background-color: white;
+         padding: 20px;
+         border-radius: 20px;
+         box-shadow: 5px 5px 15px gray;
+         text-align: center;
+         transition: 0.5s;
+     }
+     .card:hover {
+         transform: translateY(-10px);
+      }
+     .card h2 {
+         margin-bottom: 10px;
+     } 
+
+     /* Footer */
+     footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+     }    
+  
+     /* Responsive */
+     @media (max-width: 768px) {
+       nav {
+         flex-direction: column;
+         gap: 15px;
+       }
+       .hero h1 {
+          font-size: 35px;
+       }
+     }
+   </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav> 
+      <div class="logo">
+        CodeWithVeena
+      </div>   
+
+      <div class="menu">
+         <a href="">Home</a>
+         <a href="">About</a>
+         <a href="">Contact</a>
+      </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+     <h1>
+         Welcome To My Website 😍
+     </h1>
+     <p>
+        Learn Web Development Easily
+     </p>
+     <button>
+         Start Now
+     </button>
+
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+       <h2>HTML</h2>
+       <p>Learn website structure</p>
+    </div>
+    <div class="card">
+       <h2>CSS</h2>
+       <p>Learn website design</p>
+    </div>
+    <div class="card">
+        <h2>JavaScript</h2>
+        <p>Learn website logic</p>
+    </div>
+
+  </section>
+   <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 CodeWithVeena 💖
+        </p>
+
+    </footer>
+</body>
+</html>
